@@ -43,6 +43,7 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64 \
+            --provenance=false \
             --push \
             -f Dockerfile \
             -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:${IMAGE_TAG::7} \
