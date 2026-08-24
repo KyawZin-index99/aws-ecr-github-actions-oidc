@@ -11,8 +11,8 @@ permissions:
 
 env:
   AWS_REGION: ap-southeast-1
-  ECR_REPOSITORY: first_oicd 
-  AWS_ACCOUNT_ID: 097089567124 ## Replace Your ASW ACCOUNT ID
+  ECR_REPOSITORY: first_oicd
+  AWS_ACCOUNT_ID: 097089567124 # Replace Your ASW ACCOUNT ID
   IMAGE_TAG: ${{ github.sha }}
 
 jobs:
